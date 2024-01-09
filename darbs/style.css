@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html.s100 {
+  font-size: 100%;
+  
+}
+html.s150 {
+  font-size: 150%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  background: url(./images/test.jpg) no-repeat center center;
+  background-size: cover;
+  aspect-ratio: 1;
+}
+.crop-text {
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-weight: bold;
+}
+/* Add this CSS within the existing style.css or in a <style> tag in the head */
+
+.category-preview {
+  border: 3px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 400px;
+  height: 500px;
+}
+
+.category-preview img {
+  max-width: 300px;
+  height: auto;
+  max-height: 300px;
+  width: 100%;
+}
+
+.category-preview h3 {
+  margin-top: 10px;
+}
+
+.category-preview p {
+  margin-bottom: 10px;
+}
+
+.category-preview a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #919191;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.custom-line-limit {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+
